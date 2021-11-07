@@ -26,6 +26,7 @@
           <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
 
+        <%= flash.now[:recaptcha_error] %>
         <div class='field'>
           <%= recaptcha_tags %>
         </div>
