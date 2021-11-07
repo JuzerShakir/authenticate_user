@@ -17,7 +17,7 @@
       <br>
 
       <div align='center'>
-        <span class="alert-danger"><%= flash.now[:recaptcha_error] %></span>
+        <span class="alert-danger"><%= flash.discard[:recaptcha_error] %></span>
         <div class='field'>
           <%= recaptcha_tags %>
         </div>
