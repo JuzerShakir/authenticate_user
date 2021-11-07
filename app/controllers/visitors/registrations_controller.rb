@@ -4,12 +4,12 @@ class Visitors::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
-  before_action :check_captcha, only: [:create]
+  prepend_before_action :check_captcha, only: [:create]
 
   private
 
   def check_captcha
-    return if verify_recaptcha # verify_recaptcha(action: 'signup') for v3
+    return if !verify_recaptcha # verify_recaptcha(action: 'signup') for v3
 
     self.resource = resource_class.new sign_up_params
     resource.validate # Look for any other validation errors besides reCAPTCHA
