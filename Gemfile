@@ -25,9 +25,14 @@ gem 'pry-byebug'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'dotenv-rails'
+# visitor sign up, sign in,logout, forgot password and session
 gem 'devise'
+# styling in scss
 gem 'bootstrap-sass'
+# for renaming rails application
 gem 'rename'
+# implementation of reCAPTCHA
+gem "recaptcha"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

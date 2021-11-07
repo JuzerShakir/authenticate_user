@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
+  #devise_for :visitors, controllers: { registrations: "registrations"}
+
   devise_scope :visitor do
     post '/sign_up', to: 'devise/registrations#create', as: :visitor_registration
     post '/password/new', to: 'devise/passwords#create', as: :visitor_password
