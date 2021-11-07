@@ -35,4 +35,4 @@ en:
 en:
   recaptcha:
     errors:
-      verification_failed: 'reCAPTCHA was incorrect, please try again.'
+      verification_failed: 'Please confirm that you are not a robot'

@@ -10,7 +10,8 @@
             <% resource.errors.full_messages.each do |message| %>
               <li><%= message %></li>
             <% end %>
+            <li><%= flash.now[:recaptcha_error] %></li>
           </ul>
-          <%= flash.now[:recaptcha_error] %>
+
   </div>
 <% end %>
