@@ -27,12 +27,12 @@ class Visitors::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
-       recaptcha_valid = verify_recaptcha(model: @user, action: 'registration')
+       recaptcha_valid = verify_recaptcha(model: @visitor, action: 'registration')
       if recaptcha_valid
         super
       else
         flash.now[:error] = "Recaptcha Human Check Failed"
-        redirect_to new_user_registration_path
+        redirect_to :new
       end
   end
 
