@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
-  devise_for :visitors, controllers: { registrations: "registrations"}
+  devise_for :visitors, controllers: { registrations: "devise/registrations"}
 
-  #devise_scope :visitor do
+  devise_scope :visitor do
     #post '/sign_up', to: 'devise/registrations#create', as: :visitor_registration
     #post '/password/new', to: 'devise/passwords#create', as: :visitor_password
     #put '/password/new', to: 'devise/passwords#update'
-  #end
+  end
 
   # path will remove '/visitor' text from url
   # with path_names we can change text of a link, this changes link text from 'sign_in' to 'login'

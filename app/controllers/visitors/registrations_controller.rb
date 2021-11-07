@@ -3,22 +3,22 @@
 class Visitors::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  prepend_before_action :check_captcha, only: [:create]
+  #prepend_before_action :check_captcha, only: [:create]
 
-  private
+  #private
 
-  def check_captcha
-    return if verify_recaptcha # verify_recaptcha(action: 'signup') for v3
+  #def check_captcha
+    #return if verify_recaptcha # verify_recaptcha(action: 'signup') for v3
 
-    self.resource = resource_class.new sign_up_params
-    resource.validate # Look for any other validation errors besides reCAPTCHA
-    set_minimum_password_length
+    #self.resource = resource_class.new sign_up_params
+    #resource.validate # Look for any other validation errors besides reCAPTCHA
+    #set_minimum_password_length
 
-    respond_with_navigational(resource) do
-      flash.discard(:recaptcha_error) # We need to discard flash to avoid showing it on the next page reload
-      render :new
-    end
-  end
+    #respond_with_navigational(resource) do
+      #flash.discard(:recaptcha_error) # We need to discard flash to avoid showing it on the next page reload
+      #render :new
+    #end
+  #end
 
   # GET /resource/sign_up
   # def new
@@ -26,9 +26,15 @@ class Visitors::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+       recaptcha_valid = verify_recaptcha(model: @user, action: 'registration')
+      if recaptcha_valid
+        super
+      else
+        flash.now[:error] = "Recaptcha Human Check Failed"
+        redirect_to new_user_registration_path
+      end
+  end
 
   # GET /resource/edit
   # def edit
