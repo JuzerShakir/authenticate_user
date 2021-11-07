@@ -1,7 +1,7 @@
 <div id="home">
   <% if visitor_signed_in? %>
-    <% name = current_visitor.email %>
-    <h2>Welcome, <%= name %> </h2>
+
+    <h2>Welcome, <%= current_visitor.email %> </h2>
 
     <br>
 
@@ -24,11 +24,33 @@
     </a>
 
   <% else %>
+
     <h2>Hey Devs, Welcome to my Second Rails Project</h2>
 
     <p>In this project I have used 'devise' gem to to help visitor signup, signin, logout and maintain a session in this webapp.</p>
     <p>Using devise, an additional feature of 'forgot password' is given. Visitor will recieve an email (using Action Mailer) with a link to reset the password.</p>
 
+    <div class="note">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="alert-danger">
+            <b>Note:</b> Sign up with an working email address as mails will be sent on that.
+          </div>
+        </div>
+      </div>
+    </div>
+
   <% end %>
+
+  <div id="visitor-count">
+    <div class="row">
+      <div class="col-md-2.5">
+        <div class="alert-info">
+          Total visitors signed up: <b><%= @total %></b>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
