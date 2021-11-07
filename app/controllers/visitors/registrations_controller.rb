@@ -8,7 +8,7 @@ class Visitors::RegistrationsController < Devise::RegistrationsController
   private
 
   def check_captcha
-    return if verify_recaptcha
+    return if verify_recaptcha # verify_recaptcha(action: 'signup') for v3
 
     self.resource = resource_class.new sign_up_params
     resource.validate # Look for any other validation errors besides reCAPTCHA
