@@ -1,0 +1,28 @@
+<div id="home">
+  <% if visitor_signed_in? %>
+    <% name = current_visitor.email %>
+    <h2>Welcome, <%= name %> </h2>
+
+    <br>
+
+    <a href = "https://github.com/JuzerShakir/rails-session", target="blank">
+      <button type="button" class="btn btn-info">
+        Source code
+      </button>
+    </a>
+
+    <a href = "", target="blank">
+      <button type="button" class="btn btn-success">
+        Next Project
+      </button>
+    </a>
+
+  <% else %>
+    <h2>Hey Devs, Welcome to my Second Rails Project</h2>
+
+    <p>In this project I have used 'devise' gem to to help visitor signup, signin, logout and maintain a session in this webapp.</p>
+    <p>Using devise, an additional feature of 'forgot password' is given. Visitor will recieve an email (using Action Mailer) with a link to reset the password.</p>
+
+  <% end %>
+</div>
+
