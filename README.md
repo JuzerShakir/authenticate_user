@@ -5,7 +5,6 @@
   <img src="project_logo.png" />
 </div>
 
-----
 
 ## ❗ Objectives
 This web-app must accomplish the following:
@@ -112,5 +111,5 @@ I have deployed it on [Heroku](https://rails-authenticate.herokuapp.com/).
 ![](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=juzershakir.rails-authenticate&color=000000&lcolor=000000&style=for-the-badge&logo=Github)
 
 
-<a href="https://wakatime.com/@JuzerShakir/projects/rjmszkkjeo?start=2021-11-02", target="_blank"><img src="https://wakatime.com/badge/user/ccef187f-4308-4666-920d-d0a9a07d713a/project/cf27cce3-0e99-43d1-a469-74461e0e8c38.svg" alt="wakatime"></a>
+<a href="https://wakatime.com/@JuzerShakir/projects/rjmszkkjeo?start=2021-11-02" target="_blank"><img src="https://wakatime.com/badge/user/ccef187f-4308-4666-920d-d0a9a07d713a/project/cf27cce3-0e99-43d1-a469-74461e0e8c38.svg" alt="wakatime"></a>
 
