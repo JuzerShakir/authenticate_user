@@ -4,7 +4,7 @@ class RegistrationsController < Devise::RegistrationsController
   def create
     super
     if @visitor.persisted?
-      VisitorMailer.new_registration(@visitor).deliver
+      VisitorMailer.with(visitor: @visitor).welcome_email.deliver_now
     end
   end
 
