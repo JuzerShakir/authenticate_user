@@ -2,7 +2,7 @@
 *Devise + reCAPTCHA + Action Mailer + Bootstrap SASS*
 
 <div align="center">
-  <img src="project_logo.png" />
+  <img src="public/assets/project_logo.png" />
 </div>
 
 
