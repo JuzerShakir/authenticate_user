@@ -1,6 +1,13 @@
 class RegistrationsController < Devise::RegistrationsController
   prepend_before_action :check_captcha, only: [:create] # Change this to be any actions you want to protect.
 
+  def create
+    super
+    if @visitor.persisted?
+      VisitorMailer.new_registration(@visitor).deliver
+    end
+  end
+
   private
 
   def check_captcha
