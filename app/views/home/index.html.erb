@@ -3,6 +3,12 @@
 
     <h2>Welcome, <%= current_visitor.email %> </h2>
 
+    <p>Thanks for signing up! If you're reading this then your definitely not a robot, thanks to <i><b>reCAPTCHA</b></i> gem, and the <i><b>devise</b></i> gem has already created a session for you.</p>
+
+    <!--<p>If you're interested in receiving a mail</p>-->
+
+    <p>If you're</p>
+
     <br>
 
     <a href = "https://rails-session.herokuapp.com/", target="blank">
@@ -27,14 +33,16 @@
 
     <h2>Hey Devs, Welcome to my Second Rails Project</h2>
 
-    <p>In this project I have used 'devise' gem to help visitor signup, signin, logout and maintain a session in this webapp.</p>
-    <p>Using devise, an additional feature of 'forgot password' is given. Visitor will recieve an email (using Action Mailer) with a link to reset the password.</p>
+    <p>In this project, I have used <i><b>devise</b></i> gem to help visitor signup, signin, logout and maintain a session on this webapp.</p>
+    <p>Using devise, an additional feature of 'forgot password' and 'remember me' is given.</p>
+    <p>I have also used <i><b>Action Mailer</b></i> to send email to visitors who wish to reset their password.</p>
+    <p>While signing up or logging in, a <i><b>reCAPTCHA</b></i> gem is used to verify a visitor is not a robot!</p>
 
     <div class="note">
       <div class="row">
         <div class="col-md-7">
           <div class="alert-danger">
-            <b>Note:</b> Sign up with an working email address as mails will be sent on that.
+            <b>Note:</b> To receive emails, sign up with an working email address as mails will be sent on that.
           </div>
         </div>
       </div>
