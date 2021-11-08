@@ -1,7 +1,7 @@
-class VisiterMailer < ApplicationMailer
+class VisiterMailer < Devise::Mailer
 
-  def welcome_email
-    @visitor = params[:visitor]
+  def welcome_email(visitor)
+    @visitor = params[visitor]
     mail(to: @visitor.email, subject: "Welcome to My Protfolio Site")
   end
 
