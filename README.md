@@ -37,7 +37,7 @@ Following important gems were installed in these versions:
 |      Rails      |        _'rails'_        |  **6.1.4.1**  |    *Use for executing and rendering web-app*     |
 |   Postgresql    |          _'pg'_         |  **1.2.3**  | *Use postgres as the database for Active Record* |
 |    Bootstrap    |  _'bootstrap-sass'_      |  **3.4.1**  |                *For SCSS Styling*                 |
-|    Devise       |        _'devise'_       |  **3.1.16** | * Flexible authentication solution* |
+|    Devise       |        _'devise'_       |  **4.8.0**  |      *Flexible authentication solution* |
 |  reCAPTCHA     |      _'recaptcha'_       |  **3.1.16** | *Validate requests with the "I'm not a robot" checkbox* |
 
 
@@ -78,7 +78,7 @@ rvm use 2.7.2
 git clone git@github.com:JuzerShakir/rails-authenticate.git
 ```
 ```bash
-cd Session-CookieStore
+cd rails-authenticate
 ```
 ```bash
 bundle install
@@ -93,7 +93,7 @@ mv config/database.yml.clone config/database.yml
 ```bash
 rails db:setup or rails db:migrate
 ```
-### 💡 Imp Note:
+
 > Also `.env` file has been added to `.gitignore` file. You should create a similar file named `.env` at the root of this directory and fill the following environment variables value with yours:
 
 ```
