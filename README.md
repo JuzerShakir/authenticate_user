@@ -14,16 +14,15 @@
 
 ## ❗ Objectives
 This web-app must accomplish the following:
-- [x] Use PostgreSQL database which stores email and password of a visitor...
-- [x] Implement Devise gem to signup, signin and logout visitor.
-- [x] Use reCAPTCHA gem to verify a that visitor isn't a bot.
-- [x] After visitor sign up, Use rails' Action Mailer to send a welcome email.
-- [x] Show appropraite flash messages where-ever necessory like, new sign up, sign in, logout, etc.
-- [x] Show visitor sign up count to both logged out and logged in visitors.
-- [x] Redirect logged in visitor to homepage if he tries to visit log in or signup page.
+- [x] Use the PostgreSQL database which stores the email and password of a visitor...
+- [x] Implement Devise gem to signup, sign in and log out visitors.
+- [x] Use the reCAPTCHA gem to verify that the visitor isn't a bot.
+- [x] After visitors sign up, Use rails' Action Mailer to send a welcome email.
+- [x] Show appropriate flash messages wherever necessary like new sign up, sign in, logout, etc.
+- [x] Show visitor sign-up count to both logged out and logged in visitors.
+- [x] Redirect logged-in visitor to the homepage if he tries to visit the log-in or signup page.
 - [x] Build a responsive site using bootstrap.
-- [X] When a visitor manually enters a url that doesnt exist, redirect them to homepage with a flash message informing them that url doesn't exist.
-
+- [X] When a visitor manually enters a URL that doesn't exist, redirect them to the homepage with a flash message informing them that the URL doesn't exist.
 ----
 
 ## 💎 Required Gems
