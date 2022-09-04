@@ -19,8 +19,6 @@ RSpec.feature "On Home Page, the content", type: :feature do
         within("header.navbar") do
             expect(page).to have_link "Log Out", href: destroy_visitor_session_path
         end
-        within("h2") do
-            expect(page).to have_content("Welcome, #{existing_visitor.email}")
-        end
+        within("h2") { expect(page).to have_content("Welcome, #{existing_visitor.email}") }
     end
 end
