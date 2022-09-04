@@ -1,65 +1,10 @@
 <div id="home">
   <% if visitor_signed_in? %>
-
-    <h2>Welcome, <%= current_visitor.email %> </h2>
-
-    <p>Thanks for signing up!</p>
-    <p>Also thanks to <i><b>reCAPTCHA</b></i> gem for verifying that you're not a robot, and the <i><b>devise</b></i> gem for creating this session for you.</p>
-
-    <p>By the time you read this, rails' <i><b>Action Mailer</i></b> must have sent you an email which confirms that your account is created.</p>
-
-    <p>So, there you have it, three features working together harmoniously to enhance user experience.</p>
-
-    <br>
-
-    <a href = "https://rails-session.herokuapp.com/", target="blank">
-      <button type="button" class="btn btn-warning">
-        Previous Project
-      </button>
-    </a>
-
-    <a href = "https://github.com/JuzerShakir/rails-authenticate", target="blank">
-      <button type="button" class="btn btn-info">
-        Source code
-      </button>
-    </a>
-
-    <a href = "https://gratify-me.herokuapp.com", target="blank">
-      <button type="button" class="btn btn-success">
-        Next Project
-      </button>
-    </a>
-
+    <%= render "session-view" %>
   <% else %>
-
-    <h2>Hey Devs, Welcome to my Second Rails Project</h2>
-
-    <p>In this project, I have used <i><b>devise</b></i> gem to help visitor signup, signin, logout and maintain a session on this webapp.</p>
-    <p>Using devise, an additional feature of 'forgot password' and 'remember me' is given.</p>
-    <p>I have also used <i><b>Action Mailer</b></i> to send email to visitors when they sign up and for reseting their password.</p>
-    <p>While signing up or logging in, a <i><b>reCAPTCHA</b></i> gem is used to verify a visitor is not a robot!</p>
-
-    <div class="note">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="alert-danger">
-            <b>Note:</b> To receive emails, sign up with an working email address as mails will be sent on that.
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <%= render "default-view" %>
   <% end %>
 
-  <div id="visitor-count">
-    <div class="row">
-      <div class="col-md-2.5">
-        <div class="alert-info">
-          Total visitors signed up: <b><%= @total %></b>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <%= render "devise/shared/visitor-count" %>
 </div>
 
