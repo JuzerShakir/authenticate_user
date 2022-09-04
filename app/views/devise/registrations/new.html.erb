@@ -9,7 +9,7 @@
 
         <div class="field">
           <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", id: "email" %>
         </div>
 
         <div class="field">
@@ -18,12 +18,12 @@
             <em>(<%= @minimum_password_length %> characters minimum)</em>
           <% end %>
           <br />
-          <%= f.password_field :password, autocomplete: "new-password" %>
+          <%= f.password_field :password, autocomplete: "new-password", id: "password" %>
         </div>
 
         <div class="field">
           <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", id: "password_confirmation" %>
         </div>
 
         <div align='center'>
