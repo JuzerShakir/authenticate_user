@@ -23,7 +23,7 @@ RSpec.feature "On Home Page,", type: :feature do
         end
     end
 
-    describe "log out" do
+    describe "when visitor clicks on log out" do
         before do
             sign_in_with(existing_visitor)
             click_on "Log Out"
