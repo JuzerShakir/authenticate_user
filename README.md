@@ -1,19 +1,19 @@
 # Project: Devise In Action
-*Devise + reCAPTCHA + Action Mailer + Bootstrap SASS*
+
+_Devise + reCAPTCHA + Action Mailer + Bootstrap SASS_
 
 <div align="center">
   <img src="public/assets/project_logo.png" />
 </div>
 
-
 ![](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=juzershakir.rails-authenticate&color=000000&lcolor=000000&style=for-the-badge&logo=Github)
-
 
 <a href="https://wakatime.com/@JuzerShakir/projects/rjmszkkjeo?start=2021-11-02" target="_blank"><img src="https://wakatime.com/badge/user/ccef187f-4308-4666-920d-d0a9a07d713a/project/cf27cce3-0e99-43d1-a469-74461e0e8c38.svg" alt="wakatime"></a>
 
-
 ## ❗ Objectives
+
 This web-app must accomplish the following:
+
 - [x] Use the PostgreSQL database which stores the email and password of a visitor...
 - [x] Implement Devise gem to signup, sign in and log out visitors.
 - [x] Use the reCAPTCHA gem to verify that the visitor isn't a bot.
@@ -22,25 +22,25 @@ This web-app must accomplish the following:
 - [x] Show visitor sign-up count to both logged out and logged in visitors.
 - [x] Redirect logged-in visitor to the homepage if he tries to visit the log-in or signup page.
 - [x] Build a responsive site using bootstrap.
-- [X] When a visitor manually enters a URL that doesn't exist, redirect them to the homepage with a flash message informing them that the URL doesn't exist.
-----
+- [x] When a visitor manually enters a URL that doesn't exist, redirect them to the homepage with a flash message informing them that the URL doesn't exist.
+
+---
 
 ## 💎 Required Gems
 
-**This project was built on Ruby version *2.7.2*.**
+**This project was built on Ruby version _2.7.2_.**
 
 Following important gems were installed in these versions:
 
-|  **Gem Names**  |         **Gem**         | **Version** |                      **Use**                     |
-| :------------:  |     :------------:      | :---------: |                    :---------:                   |
-|      Rails      |        _'rails'_        |  **6.1.4.1**  |    *Use for executing and rendering web-app*     |
-|   Postgresql    |          _'pg'_         |  **1.2.3**  | *Use postgres as the database for Active Record* |
-|    Bootstrap    |  _'bootstrap-sass'_      |  **3.4.1**  |                *For SCSS Styling*                 |
-|    Devise       |        _'devise'_       |  **4.8.0**  |      *Flexible authentication solution* |
-|  reCAPTCHA     |      _'recaptcha'_       |  **3.1.16** | *Validate requests with the "I'm not a robot" checkbox* |
+| **Gem Names** |      **Gem**       | **Version** |                         **Use**                         |
+| :-----------: | :----------------: | :---------: | :-----------------------------------------------------: |
+|     Rails     |     _'rails'_      | **6.1.4.1** |        _Use for executing and rendering web-app_        |
+|  Postgresql   |       _'pg'_       |  **1.2.3**  |    _Use postgres as the database for Active Record_     |
+|   Bootstrap   | _'bootstrap-sass'_ |  **3.4.1**  |                   _For SCSS Styling_                    |
+|    Devise     |     _'devise'_     |  **4.8.0**  |           _Flexible authentication solution_            |
+|   reCAPTCHA   |   _'recaptcha'_    | **3.1.16**  | _Validate requests with the "I'm not a robot" checkbox_ |
 
-
-----
+---
 
 ## ⚙️ Setting up a PostgreSQL user
 
@@ -49,20 +49,26 @@ If you don't have a user set on postgres, here's how to set new user:
 ```bash
 sudo -u postgres createuser -s [username]
 ```
+
 To set a password for this user, log in to the PostgreSQL command line client:
+
 ```bash
 sudo -u postgres psql
 ```
+
 Enter the following command to set the password:
+
 ```bash
 \password your_password
 ```
+
 Enter and confirm the password. Then exit the PostgreSQL client:
+
 ```bash
 \q
 ```
 
------
+---
 
 ## 📋 Execution
 
@@ -73,22 +79,19 @@ The following will install required version of ruby (make sure [rvm is installed
 ```bash
 rvm use 2.7.2
 ```
+
 ```bash
 git clone git@github.com:JuzerShakir/rails-authenticate.git
 ```
+
 ```bash
 cd rails-authenticate
 ```
+
 ```bash
 bundle install
 ```
 
-### 💡 Imp Note:
-> The `config/database.yml` has been added to `.gitignore` but a similar file `config/database.yml.clone` exists in its place. You will need to add your own postgresql username and password in the file. And then rename the file by:
-
-```bash
-mv config/database.yml.clone config/database.yml
-```
 ```bash
 rails db:setup or rails db:migrate
 ```
@@ -106,10 +109,7 @@ RECAPTCHA_SECRET_KEY = your_secret_key
 rails s
 ```
 
-
-
 To see this web-app up and running without executing above commands locally,
 I have deployed it on [Heroku](https://rails-authenticate.herokuapp.com/).
 
------
-
+---
