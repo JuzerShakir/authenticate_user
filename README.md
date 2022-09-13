@@ -92,11 +92,37 @@ cd rails-authenticate
 bundle install
 ```
 
+#### 💡 Imp Note:
+
+To successfully create development and test database, you will need to update `config.database.yml` file with correct postgresql username and password.
+To edit the it without exposing your credentials, give the following command:
+
 ```bash
-rails db:setup or rails db:migrate
+EDITOR="code --wait" rails credentials:edit
 ```
 
-> Also `.env` file has been added to `.gitignore` file. You should create a similar file named `.env` at the root of this directory and fill the following environment variables value with yours:
+_`code` for Visual Studio Code_
+_`subl` for sublime_
+
+This will open `credential.yml` file and enter credential as follows in it:
+
+```
+database:
+  username: your_username
+  password: your_password
+```
+
+Hit `ctrl + s` to save and then close the `credential.yml` file from the editor. This will save the credentials. To check if it did save, run the following inside rails console:
+
+```
+Rails.application.credentials.dig(:database, :username)
+```
+
+```bash
+rails db:create
+```
+
+Also `.env` file has been added to `.gitignore` file. You should create a similar file named `.env` at the root of this directory and fill the following environment variables value with yours:
 
 ```
 GMAIL_USERNAME = your_email
