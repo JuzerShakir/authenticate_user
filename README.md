@@ -1,6 +1,6 @@
 # Project: Authenticate User
 
-_Devise + reCAPTCHA + Action Mailer + Bootstrap SASS_
+_Authenticate the user when they sign-up or sign-in_
 
 <div align="center">
   <img src="public/assets/project_logo.png" />
