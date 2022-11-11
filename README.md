@@ -1,4 +1,4 @@
-# Project: Devise In Action
+# Project: Authenticate User
 
 _Devise + reCAPTCHA + Action Mailer + Bootstrap SASS_
 
