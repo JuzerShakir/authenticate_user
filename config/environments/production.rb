@@ -15,7 +15,7 @@ Rails.application.configure do
     password:ENV["GMAIL_PASSWORD"]
   }
 
-  config.action_mailer.default_url_options = { :host => 'rails-authenticate.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'authenticate-user-9udr.onrender.com/' }
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
