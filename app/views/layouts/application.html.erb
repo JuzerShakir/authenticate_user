@@ -14,7 +14,7 @@
 
   <body>
 
-    <% if visitor_signed_in? %>
+    <% if user_signed_in? %>
       <%= render 'devise/shared/signin-header' %>
     <% else %>
       <%= render 'devise/shared/header' %>

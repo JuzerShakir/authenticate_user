@@ -25,7 +25,7 @@ gem 'pry-byebug'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'dotenv-rails'
-# visitor sign up, sign in,logout, forgot password and session
+# sign up, sign in, logout, forgot password and session
 gem 'devise'
 # styling in scss
 gem 'bootstrap-sass'

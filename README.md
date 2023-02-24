@@ -14,15 +14,15 @@ _Authenticate the user when they sign-up or sign-in_
 
 This web-app must accomplish the following:
 
-- [x] Use the PostgreSQL database which stores the email and password of a visitor...
-- [x] Implement Devise gem to signup, sign in and log out visitors.
-- [x] Use the reCAPTCHA gem to verify that the visitor isn't a bot.
-- [x] After visitors sign up, Use rails' Action Mailer to send a welcome email.
+- [x] Use the PostgreSQL database which stores the email and password of a user...
+- [x] Implement Devise gem to signup, sign in and log out users.
+- [x] Use the reCAPTCHA gem to verify that the user isn't a bot.
+- [x] After users sign up, Use rails' Action Mailer to send a welcome email.
 - [x] Show appropriate flash messages wherever necessary like new sign up, sign in, logout, etc.
-- [x] Show visitor sign-up count to both logged out and logged in visitors.
-- [x] Redirect logged-in visitor to the homepage if he tries to visit the log-in or signup page.
+- [x] Show user sign-up count to both logged out and logged in users.
+- [x] Redirect logged-in user to the homepage if he tries to visit the log-in or signup page.
 - [x] Build a responsive site using bootstrap.
-- [x] When a visitor manually enters a URL that doesn't exist, redirect them to the homepage with a flash message informing them that the URL doesn't exist.
+- [x] When a user manually enters a URL that doesn't exist, redirect them to the homepage with a flash message informing them that the URL doesn't exist.
 
 ---
 

@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @total = Visitor.all.count
+    @total = User.all.count
   end
 
   def not_found

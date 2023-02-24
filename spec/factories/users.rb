@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :visitor do
+  factory :user do
     sequence(:email) { |n| "test#{n}@authenticate.com" }
     password { "123456" }
     password_confirmation { "123456" }

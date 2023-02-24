@@ -1,10 +1,10 @@
 <div id="home">
-  <% if visitor_signed_in? %>
+  <% if user_signed_in? %>
     <%= render "session-view" %>
   <% else %>
     <%= render "default-view" %>
   <% end %>
 
-  <%= render "devise/shared/visitor-count" %>
+  <%= render "devise/shared/user-count" %>
 </div>
 
