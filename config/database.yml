@@ -82,4 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: authenticate_user_production
+  url: <%= ENV['DATABASE_URL'] %>
