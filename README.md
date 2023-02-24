@@ -135,7 +135,4 @@ RECAPTCHA_SECRET_KEY = your_secret_key
 rails s
 ```
 
-To see this web-app up and running without executing above commands locally,
-I have deployed it on [Heroku](https://rails-authenticate.herokuapp.com/).
-
 ---
